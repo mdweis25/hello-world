@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script type="text/javascript">
+		writeRandomQuote = function () {
+			var quotes = new Array();
+			quotes[0] = "Action is the real measure of intelligence.";
+			quotes[1] = "Baseball has the great advantage over cricket of being sooner ended.";
+			quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one's level of peace of mind.";
+			quotes[3] = "A good head and a good heart are always a formidable combination.";
+			var rand = Math.floor(Math.random()*quotes.length);
+			document.write(quotes[rand]);
+		}
+		</script>
+		<title>Welcome!</title>
+	</head>
+	<body>
+		<div class="w3-sidebar w3-bar-block w3-light-grey" style="width:20%">
+			<a href="page2.html" class="w3-bar-item w3-button w3-border-bottom">Page 2</a>
+			<a href="page3.html" class="w3-bar-item w3-button w3-border-bottom">Page 3</a>
+			<a href="https://www.liquidinformation.org/information_history.html" class="w3-bar-item w3-button w3-border-bottom" title="Leaves this site">A Brief History of Information</a>
+			<a href="https://users.dcc.uchile.cl/~hsarmien/libros/The_Information_%20A_History.pdf" class="w3-bar-item w3-button w3-border-bottom" title="PDF File">The Information by James Gleick</a>
+			<a href="lucky_chests.html" class="w3-bar-item w3-button w3-border-bottom">Lucky Chests =D</a>
+			<a href="cookies_prac.php" class="w3-bar-item w3-button w3-border-bottom">Cookies</a>
+		</div>
+		<div style="margin-left:20%">
+			<?php
+				echo 'Hello World, Welcome to Page 1 of my very first Website!';
+			?>
+			<h1 style="color:Green;">My First Website</h1>
+			<p title="Random Quote"><script type="text/javascript">writeRandomQuote();</script><br></p>
+			<a href="background.png" download>Click here to download this background.<br><br></a>
+			<p1 id="test"></p1>
+			<a href='https://www.google.com'>Link to Google.<br><br><br></a>
+			<a href="javascript:LaunchApp()">Exec JS<br></a>
+			<img src=background.png alt='background' width=80%>
+			<script>
+			function LaunchApp() {
+				if (!document.all) {
+					document.getElementById("test").innerHTML = "Fail! Unable to execute windows file.<br><br>";
+				}
+			}
+			</script>
+		</div>
+	</body>
+</html>

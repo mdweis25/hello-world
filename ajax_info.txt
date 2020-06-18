@@ -1,0 +1,22 @@
+<h1>AJAX</h1>
+<p>AJAX is not a programming language.</p>
+<p>AJAX is a technique for accessing web servers from a web page.</p>
+<p>AJAX stands for Asynchronous JavaScript And XML.</p>
+<br>
+<a href="index.html">Login 1</a>
+<br>
+<a href="index2.html">Login 2</a>
+<br>
+<a href="page1.html">Back to Page 1</a>
+<br>
+<a href="page2.html">Go to Page 2</a>
+<br>
+<a href="page3.html">Go to Page 3</a>
+<br>
+<a href="lucky_chests.html">Lucky Chests</a>
+<br>
+<a href="cookies_prac.php">Cookies</a>
+<br>
+<a href="XMLHTTPRequest.html">XML HTTP Request</a>
+<br>
+<a href="user_joindate.html">Joindate page</a>

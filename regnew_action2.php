@@ -1,5 +1,5 @@
 <?php
-  $mysqli = new mysqli("localhost", "root", "jXH2NysE7EBx9Q3e21", "user_accounts");
+  $mysqli = new mysqli("localhost", "user", "pwd", "table");
   if($mysqli->connect_error) {
     exit('Could not connect');
   }

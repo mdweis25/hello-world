@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login 2</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <form action="loginuser.php" class="login-form" method="post">
+      <p>
+      <img src="icon.png" alt="Icon" width="40%">
+      </p>
+      <div class="txtb">
+        <input type="text">
+        <span data-placeholder="Username"></span>
+      </div>
+      <div class="txtb">
+        <input type="password">
+        <span data-placeholder="Password"></span>
+      </div>
+      <input type="submit" class="logbtn" value="Login">
+      <div class="bottom-text">
+        Don't have an account? <a href="signup.html">Sign up</a>
+      </div>
+    </form>
+    <script type="text/javascript">
+      $(".txtb input").on("focus", function(){
+        $(this).addClass("focus");
+      });
+      $(".txtb input").on("blur", function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+    </script>
+  </body>
+</html>

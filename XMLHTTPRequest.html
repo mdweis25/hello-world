@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>The XMLHttpRequest Object</h1>
+    <p>The getResponseHeader() function is used to return specific header information from a resource, like length, server-type, content-type, last-modified, etc:</p>
+    <p>Url Requested: <span id="demo"></span></p>
+    <p>Content-Type: <span id="demo2"></span></p>
+    <p>Length: <span id="demo3"></span></p>
+    <p>Last-Modified: <span id="demo4"></span></p>
+    <p>Server-Type: <span id="demo5"></span></p>
+    <script>
+      var xhttp=new XMLHttpRequest();
+      var urlreqd="index2.html";
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo").innerHTML =
+          urlreqd;
+          document.getElementById("demo2").innerHTML =
+          this.getResponseHeader("Content-Type");
+          document.getElementById("demo3").innerHTML =
+          this.getResponseHeader("Length");
+          document.getElementById("demo4").innerHTML =
+          this.getResponseHeader("Last-Modified");
+          document.getElementById("demo5").innerHTML =
+          this.getResponseHeader("Server-Type");
+        }
+      };
+      xhttp.open("GET", urlreqd, true);
+      xhttp.send();
+    </script>
+  </body>
+</html>

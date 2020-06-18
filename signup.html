@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>New User Registration</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <form action="regnew.php" class="login-form" method="post">
+      <h1>Welcome!</h1>
+      <div class="txtb">
+        <input type="text" name="email" autocomplete="off">
+        <span data-placeholder="E-mail"></span>
+      </div>
+      <div class="txtb">
+        <input type="text" name="username" autocomplete="off">
+        <span data-placeholder="Username"></span>
+      </div>
+      <div class="txtb">
+        <input type="password" name="pwd" autocomplete="off">
+        <span data-placeholder="Password (Alpha-Numeric Only)"></span>
+      </div>
+      <div class="txtb">
+        <input type="password" name="pwdcnfm" autocomplete="off">
+        <span data-placeholder="Confirm"></span>
+      </div>
+      <input type="submit" class="logbtn" value="Register">
+    </form>
+    <script type="text/javascript">
+      $(".txtb input").on("focus", function(){
+        $(this).addClass("focus");
+      });
+      $(".txtb input").on("blur", function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+    </script>
+  </body>
+</html>
